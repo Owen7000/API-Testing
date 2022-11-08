@@ -28,8 +28,6 @@ def api():
 
 @app.route("/docs")
 def docs():
-  global hits
-  hits += 1
   return render_template("docs.html")
 
 if __name__ == "__main__":
